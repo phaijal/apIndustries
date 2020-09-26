@@ -45,8 +45,10 @@ body {
 
 
 /* BOXES */
+
 section#home_six_boxs {
-    margin-top: -50px;
+    margin-top: -15px;
+    margin-bottom: 50px;
 }
 .home_six_box_item {
 	padding-bottom: 30px;
@@ -289,3 +291,4 @@ figure img {
 .abc{
     float: right;
 }
+
