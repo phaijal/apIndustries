@@ -168,6 +168,98 @@ section#home_six_boxs {
 }
 .max_container {
        max-width:1174px;
-    height: 514px;
+    height: 214px;
        position: relative; 
+}
+
+
+/* About Us */
+
+.title h5 {
+	font-family: 'HindVadodaraSemiBold';
+	font-size: 18px;
+	color: #ead6a9;
+	position: relative;
+}
+.title h5:before {
+	content: '';
+	position: absolute;
+	width: 44px;
+	height: 4px;
+	background-color: #ead6a9;
+}
+.left_title_line h5 {
+	padding-left: 54px;
+}
+.left_title_line h5:before {
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.top_left_title_line h5 {
+	padding-top: 14px;
+}
+.top_left_title_line h5:before {
+	top: 0;
+	left: 0;
+}
+.top_center_title_line h5 {
+	padding-top: 13px;
+}
+.top_center_title_line h5:before {
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.title h1 {
+	font-family: 'HindVadodaraSemiBold';
+	font-size: 55px;
+	color: #000000;
+	line-height: 53px;
+}
+.title h6 {
+	font-family: 'HindVadodaraSemiBold';
+	font-size: 16px;
+	color: #000000;
+}
+.title h1 span {
+	display: block;
+}
+.no_title_text h5 {
+	margin-bottom: 0;
+    padding-top: 10px;
+}
+.blue_text {
+	color: #0099dc;
+}
+.para_text p {
+	line-height: 29px;
+	padding-top: 5px;
+}
+.btn {
+	font-family: 'HindVadodaraSemiBold';
+    font-size: 16px;
+	padding-left: 25px;
+	padding-right: 25px;
+    padding-bottom: 11px;
+    padding-top: 9px;
+}
+.blue_btn {
+	background-color: #0099dc!important;
+	color: #ffffff!important;
+}
+.blue_btn:hover {
+	background-color: #217dc5!important;
+}
+.btn-outline-dark {
+	border-width: 2px;
+	border-color: #333333;
+	color: #333333;
+}
+figure img {
+    padding-top: 20px;
+	width: 100%;
 }
