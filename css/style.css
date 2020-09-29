@@ -48,7 +48,7 @@ body {
 
 section#home_six_boxs {
     margin-top: -15px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .home_six_box_item {
 	padding-bottom: 30px;
@@ -285,6 +285,7 @@ figure img {
 .w3-margin-bottom{margin-bottom:16px!important}
 
 .contact{
+    margin-top: 150px;
     padding-top: 100px;
     padding-left: 100px;
 }
