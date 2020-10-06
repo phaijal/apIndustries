@@ -255,42 +255,47 @@ section#home_six_boxs {
 /* About Us */
 
 
+body {
+  height: 100vh;
+   background: linear-gradient(90deg,#e52e71,#ff8a00);
 
-
-.gradient-background {
-  height: 600px;
-   background: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-     animation: gradient 5s ease infinite; 
-      background-size: 400% 400%;
-  
-}
-@-webkit-keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
-}
-@keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
 }
 
+.slider-thumb::before {
+	position: absolute;
+	content: "";
+	left: 30%;
+	top: 20%;
+	width: 450px;
+	height: 450px;
+	background: #17141d;
+	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+	will-change: border-radius, transform, opacity;
+	animation: sliderShape 5s linear infinite;
+	display: block;
+	z-index: -1;
+	-webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
 
+/*------*/
 
-
-/*--------*/
 .title h5 {
 	font-family: 'HindVadodaraSemiBold';
 	font-size: 18px;
@@ -333,13 +338,13 @@ section#home_six_boxs {
 .title h1 {
 	font-family: 'HindVadodaraSemiBold';
 	font-size: 55px;
-	color: #000000;
+	color: azure;
 	line-height: 53px;
 }
 .title h6 {
 	font-family: 'HindVadodaraSemiBold';
 	font-size: 16px;
-	color: #000000;
+	color: aqua;
 }
 .title h1 span {
 	display: block;
@@ -354,6 +359,7 @@ section#home_six_boxs {
 .para_text p {
 	line-height: 29px;
 	padding-top: 5px;
+    color: white;
 }
 .btn {
 	font-family: 'HindVadodaraSemiBold';
@@ -399,11 +405,110 @@ figure img {
 .w3-margin-bottom{margin-bottom:16px!important}
 
 .contact{
+    background: none;
     margin-top: 150px;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-left: 100px;
 }
 .abc{
     float: right;
+}
+
+/* footer */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+footer {
+  width:100vw;
+  bottom:0px
+}
+footer div {
+  background-color:#4478e3;
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+svg {
+  width:100%;
+}
+.arrow {
+  stroke-width: .3px;
+  stroke:yellow;
+}
+.topball {
+  animation: ball 1.5s ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+  cursor:pointer;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #4478e3;
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: #4478e3;
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
 }
 
