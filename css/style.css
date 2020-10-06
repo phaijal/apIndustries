@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-image:  url(../img/background.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #home-content-box {
@@ -115,6 +116,13 @@ body {
 
 /* BOXES */
 
+
+
+
+
+
+
+/*--------*/
 section#home_six_boxs {
     margin-top: -15px;
     margin-bottom: 150px;
@@ -246,6 +254,43 @@ section#home_six_boxs {
 
 /* About Us */
 
+
+
+
+.gradient-background {
+  height: 600px;
+   background: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+     animation: gradient 5s ease infinite; 
+      background-size: 400% 400%;
+  
+}
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+
+
+
+
+/*--------*/
 .title h5 {
 	font-family: 'HindVadodaraSemiBold';
 	font-size: 18px;
