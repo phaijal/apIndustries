@@ -26,20 +26,31 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+      animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
 }
-
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
 #home-heading h3 {
     color: #fff;
     font-size: 55px;
     font-weight: 700;
     text-transform: capitalize;
+ 
 }
+
 .w3-xxxlarge{font-size:48px!important}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-padding{padding:8px 16px!important}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
 .w3-opacity-min{opacity:0.75}
-.w3-text-light-grey{color:#f1f1f1!important}
+.w3-text-light-grey{color:#f1f1f1}
 
 
 
